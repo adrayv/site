@@ -2,12 +2,15 @@ import React from "react"
 import styled from "styled-components"
 
 const H1 = styled.h1`
+  line-height: 0.9em;
+  font-size: 3em;
   & .adrayv-text {
     display: inline;
   }
 `
 
-const H2 = styled.h2`
+const H2 = styled.h3`
+  font-size: 24px;
   & .adrayv-text {
     display: inline;
   }

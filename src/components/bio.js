@@ -1,8 +1,18 @@
 import React from "react"
 import Text from "src/components/text"
+import styled from "styled-components"
+
+const Layout = styled.div`
+  & > * {
+    margin-bottom: 1em;
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+`
 
 export default () => (
-  <div>
+  <Layout>
     <Text>
       Hi! I'm Destin. I'm a Full Stack Software Engineer. I love creating
       delightful user interfaces and orchestrating complex systems.
@@ -19,5 +29,5 @@ export default () => (
       At home, you'll probably find me honing my skills at Smash, getting lost
       in a YouTube hole, or kickin it with my cat Phoebe.
     </Text>
-  </div>
+  </Layout>
 )
