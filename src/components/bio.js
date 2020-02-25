@@ -27,7 +27,8 @@ export default () => (
     </Text>
     <Text>
       At home, you'll probably find me honing my skills at Smash, getting lost
-      in a YouTube hole, or kickin it with my cat Phoebe.
+      in a YouTube hole, or kickin it with my cat{" "}
+      <Text link="https://www.instagram.com/feline.phoebe/">Phoebe</Text>.
     </Text>
   </Layout>
 )
