@@ -10,6 +10,6 @@ export default () => {
     } else {
       switchToLightMode()
     }
-  }, [theme.name])
+  }, [theme.name, switchToLightMode, switchToDarkMode])
   return <View onChange={changeHandler} isOn={theme.name === "light"} />
 }
