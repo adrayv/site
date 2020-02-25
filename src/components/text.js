@@ -7,6 +7,11 @@ const H1 = styled.h1`
   & .adrayv-text {
     display: inline;
   }
+  color: ${({
+    theme: {
+      color: { primary },
+    },
+  }) => primary};
 `
 
 const H2 = styled.h3`
@@ -14,18 +19,33 @@ const H2 = styled.h3`
   & .adrayv-text {
     display: inline;
   }
+  color: ${({
+    theme: {
+      color: { secondary },
+    },
+  }) => secondary};
 `
 
 const Body = styled.div`
   & .adrayv-text {
     display: inline;
   }
+  color: ${({
+    theme: {
+      color: { secondary },
+    },
+  }) => secondary};
 `
 
 const Link = styled.a`
   color: blue;
   cursor: pointer;
   text-decoration: none;
+  color: ${({
+    theme: {
+      color: { tertiary },
+    },
+  }) => tertiary};
 `
 
 export default ({ children, headline, subheadline, link }) => {

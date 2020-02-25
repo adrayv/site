@@ -6,12 +6,22 @@ const { Provider } = Context
 
 const lightTheme = {
   name: "light",
-  color: "black",
+  color: {
+    primary: "#c4a71c",
+    secondary: "#212113",
+    tertiary: "#a88b00",
+    bg: "#e9e7de",
+  },
 }
 
 const darkTheme = {
   name: "dark",
-  color: "white",
+  color: {
+    primary: "#c4a71c",
+    secondary: "#e9e7de",
+    tertiary: "#c4a71c",
+    bg: "#212113",
+  },
 }
 
 export const ThemeStateProvider = ({ children }) => {
