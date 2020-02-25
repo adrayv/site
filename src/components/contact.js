@@ -1,8 +1,9 @@
 import React from "react"
+import Text from "src/components/text"
 
 export default () => (
   <>
-    <p>Contact 1</p>
-    <p>Contact 2</p>
+    <Text>Contact 1</Text>
+    <Text>Contact 2</Text>
   </>
 )

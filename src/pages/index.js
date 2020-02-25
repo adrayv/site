@@ -1,20 +1,24 @@
 import React from "react"
+import { ThemeProvider } from "styled-components"
+import useTheme, { ThemeStateProvider } from "src/hooks/useTheme"
+import Home from "src/components/home"
 import "src/components/index.css"
-import Layout from "src/components/layout"
-import SEO from "src/components/seo"
-import Name from "src/components/name"
-import Title from "src/components/title"
-import Bio from "src/components/bio"
-import Contact from "src/components/contact"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Name />
-    <Title />
-    <Bio />
-    <Contact />
-  </Layout>
+const ContextProvider = ({ children }) => (
+  <ThemeStateProvider>{children}</ThemeStateProvider>
 )
 
-export default IndexPage
+const IndexPage = () => {
+  const { theme } = useTheme()
+  return (
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  )
+}
+
+export default () => (
+  <ContextProvider>
+    <IndexPage />
+  </ContextProvider>
+)

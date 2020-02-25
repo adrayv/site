@@ -1,3 +1,4 @@
 import React from "react"
+import Text from "src/components/text"
 
-export default () => <h1>Destin Raymundo</h1>
+export default () => <Text>Destin Raymundo</Text>
