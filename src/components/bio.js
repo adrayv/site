@@ -21,13 +21,13 @@ export default () => (
       I've done work for <Text link="https://unum.la">UNUM</Text>,{" "}
       <Text link="https://www.belkin.com/us/">Belkin</Text>, and{" "}
       <Text link="https://ucladevx.com">various</Text>{" "}
-      <Text link="https://ccle.ucla.edu">oranizations</Text> at UCLA, where I
+      <Text link="https://ccle.ucla.edu">organizations</Text> at UCLA, where I
       got my Computer Science degree. I can lead the development of a product
-      from MVP to production, and am comfortable anywhere in between.
+      from MVP to production and am comfortable anywhere in between.
     </Text>
     <Text>
       At home, you'll probably find me honing my skills at Smash, getting lost
-      in a YouTube hole, or kickin it with my cat{" "}
+      in a YouTube hole, or hanging out with my cat,{" "}
       <Text link="https://www.instagram.com/feline.phoebe/">Phoebe</Text>.
     </Text>
   </Layout>
